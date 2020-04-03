@@ -1,0 +1,1284 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Regular.ttf"),
+       url("../fonts/OpenSans-Regular.woff"),
+       url("../fonts/OpenSans-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Bold.ttf"),
+       url("../fonts/OpenSans-Bold.woff"),
+       url("../fonts/OpenSans-Bold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* General rules for header */
+
+
+.header, .footer {
+  position: relative;
+
+  background-color: #0a0e34;
+}
+
+.header::after, .footer::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  opacity: 0.1;
+}
+
+.logo-container, .basement-logo-box {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.tagline-container {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  letter-spacing: 0.05em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: bold;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.mobile-stores-container, .basement-buttons {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+
+  background-color: #5e42b0;
+}
+
+.button-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-text {
+  letter-spacing: 0.05em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: normal;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.name-store {
+  font-weight: bold;
+}
+
+
+/* General rules for main */
+
+
+/* General rules for main Part_1 */
+
+.participants-group {
+  position: relative;
+  z-index: 0;
+}
+
+.participants-group::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+
+  background-repeat: no-repeat;
+}
+
+.participants-group::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+
+  background-repeat: no-repeat;
+}
+
+.first-participant-card, .second-participant-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-title-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.a-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.a-text, .p-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-card-title, .p-card-title, .action-title {
+  margin: 0;
+
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: bold;
+
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+.collaboration-box {
+  align-items: center;
+
+  background-color: #5e42b00f;
+}
+
+.growth-box {
+  align-items: center;
+
+  background-color: #5e42b0;
+}
+
+.name-index-box {
+  display: flex;
+}
+
+.quantity-index, .p-quantity-index {
+  letter-spacing: 0.05em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.connection-index, .collaboration-index {
+  color: #000000;
+}
+
+.growth-index {
+  color: #0a0e34;
+}
+
+.quantity-index::after, .p-quantity-index::after {
+  content: "";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.connection-index::after, .collaboration-index::after {
+  background-color: #5e42b0;
+}
+
+.growth-index::after {
+  background-color: #efefef;
+}
+
+.feature-name {
+  margin: 0;
+
+  line-height: 0.97em;
+  letter-spacing: 0.05em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: bold;
+
+  color: #c1c1c1;
+  text-transform: uppercase;
+}
+
+.feature-text, .action-description {
+  margin: 0;
+
+  letter-spacing: 0.05em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.connection-description, .collaboration-description, .action-description {
+  color: #000000;
+}
+
+.growth-description {
+  color: #ffffff;
+}
+
+.p-title-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.p-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.p-collaboration-box {
+  align-items: center;
+
+  background-color: #0a0e340a;
+}
+
+.p-growth-box {
+  align-items: center;
+
+  background-color: #0a0e34;
+}
+
+.p-connection-index, .p-collaboration-index {
+  color: #000000;
+}
+
+.p-growth-index {
+  color: #9173e6;
+}
+
+.p-connection-index::after, .p-collaboration-index::after {
+  background-color: #5e42b0;
+}
+
+.p-growth-index::after {
+  background-color: #efefef;
+}
+
+/* General rules for main Part_2 */
+
+.action-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+.action-card-item {
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+
+  background-repeat: no-repeat;
+}
+
+.action-index-box {
+  position: absolute;
+  z-index: 1;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #5e42b0;
+}
+
+.action-index {
+  margin: 0;
+
+  letter-spacing: 0.05em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: bold;
+
+  color: #f5f6f7;
+}
+
+.action-index::after {
+  content: "";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+
+/* General rules for footer */
+
+
+.download-container {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.77vw;
+  height: 7.13vw;
+
+  background: linear-gradient(#7751db 0%, #5e3db3 51%, #50329c 100%);
+}
+
+.surface-logo-icon {
+  width: 5.52vw;
+}
+
+.footer-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title {
+  margin: 0;
+
+  letter-spacing: 0.05em;
+  line-height: 1em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: bold;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-tagline {
+  margin: 0;
+
+  letter-spacing: 0.05em;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: normal;
+
+  color: #a496ca;
+  text-transform: uppercase;
+}
+
+
+/* Screen resolutions for flexible background */
+
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .active-card {
+    background-image: url("../img/be-active.jpg");
+  }
+
+  .contact-card {
+    background-image: url("../img/find-contact.jpg");
+  }
+
+  .work-card {
+    background-image: url("../img/work-it.jpg");
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .action-card-item {
+    padding-top: 87.89vw;
+
+    background-size: contain;
+  }
+
+  .active-card {
+    background-image: url("../img/be-active_960.jpg");
+  }
+
+  .contact-card {
+    background-image: url("../img/find-contact_960.jpg");
+  }
+
+  .work-card {
+    background-image: url("../img/work-it_960.jpg");
+  }
+}
+
+@media (min-width: 1921px) {
+  .active-card {
+    background-image: url("../img/be-active_1024.jpg");
+  }
+
+  .contact-card {
+    background-image: url("../img/find-contact_1024.jpg");
+  }
+
+  .work-card {
+    background-image: url("../img/work-it_1024.jpg");
+  }
+}
+
+
+/* Rules for mobile */
+
+
+/* Rules for header mobile */
+
+@media (max-width: 640px) {
+  .header::after {
+    background-image: url("../img/football_767.jpg");
+  }
+
+  .header-logo-box {
+    padding-top: 10.31vw;
+  }
+
+  .surface-logo-text-icon {
+    width: 41.56vw;
+    height: 11.25vw;
+  }
+
+  .tagline-container {
+    padding-top: 42.5vw;
+
+    font-size: 8.75vw;
+    line-height: 1em;
+  }
+
+  .phrase-1 {
+    margin-left: 6.25vw;
+  }
+
+  .phrase-2 {
+    margin-top: 2vw;
+    margin-left: 20.3vw;
+  }
+
+  .mobile-stores-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27.81vw;
+    padding-bottom: 26.25vw;
+  }
+
+  .button-group {
+    box-sizing: border-box;
+    width: 87.5vw;
+    height: 10.93vw;
+    padding-left: 25.6vw;
+
+    border-radius: 5vw;
+  }
+
+  .appstore-group {
+    margin-bottom: 4.37vw;
+  }
+
+  .appstore-icon {
+    width: 6.25vw;
+    height: 7.5vw;
+    padding-right: 2.81vw;
+  }
+
+  .googleplay-icon {
+    width: 6.87vw;
+    height: 7.5vw;
+    padding-right: 2.18vw;
+  }
+
+  .button-text {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+  }
+
+  .name-store {
+    padding-top: 1.25vw;
+  }
+
+  /* Rules for main mobile Part_1 */
+
+  .participants-group::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 30vw;
+    margin-left: 21.87vw;
+
+    background-image: url("../img/footballer_192.png");
+    background-size: 60vw;
+  }
+
+  .participants-group::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 350vw;
+    margin-left: 3.12vw;
+
+    background-image: url("../img/basketballer_302.png");
+    background-size: 94.37vw;
+  }
+
+  .a-title-box, .p-title-box {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-left: 6.56vw;
+  }
+
+  .a-title-box, .p-title-box {
+    margin-top: 3.3vw;
+    margin-bottom: 76.56vw;
+  }
+
+  .a-box, .p-box {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .a-text, .p-text {
+    width: 85.62vw;
+    margin-left: 6.25vw;
+  }
+
+  .a-card-title, .p-card-title {
+    font-size: 15.62vw;
+  }
+
+  .connection-box, .p-connection-box {
+    background-color: #fafafa;
+  }
+
+  .connection-box {
+    box-sizing: border-box;
+    height: 66.56vw;
+    padding-top: 25.93vw;
+  }
+
+  .collaboration-box {
+    height: 81.87vw;
+  }
+
+  .growth-box {
+    height: 71.25vw;
+  }
+
+  .quantity-index, .p-quantity-index {
+    font-size: 4.37vw;
+  }
+
+  .quantity-index::after, .p-quantity-index::after {
+    width: 5vw;
+    height: 1.25vw;
+
+    border-radius: 0.46vw;
+  }
+
+  .feature-name {
+    padding-left: 2.5vw;
+
+    font-size: 7.18vw;
+  }
+
+  .feature-text {
+    padding-top: 8.75vw;
+
+    font-size: 4.68vw;
+  }
+
+  .p-connection-box {
+    height: 78.43vw;
+    align-items: center;
+  }
+
+  .p-collaboration-box {
+    height: 60vw;
+  }
+
+  .p-growth-box {
+    height: 59.06vw;
+  }
+
+  /* Rules for main mobile Part_2 */
+
+  .action-card-item {
+    height: 175.93vw;
+
+    background-position: top;
+    background-size: contain;
+  }
+
+  .active-card {
+    background-image: url("../img/be-active_640.jpg");
+  }
+
+  .contact-card {
+    background-image: url("../img/find-contact_640.jpg");
+  }
+
+  .work-card {
+    background-image: url("../img/work-it_640.jpg");
+  }
+
+  .action-index-box {
+    width: 21.87vw;
+    height: 21.87vw;
+    margin-top: 91.56vw;
+    margin-left: 6.25vw;
+  }
+
+  .action-index {
+    font-size: 4.37vw;
+  }
+
+  .action-index::after {
+    width: 4.68vw;
+    height: 1.25vw;
+
+    border-radius: 0.46vw;
+  }
+
+  .action-text-block {
+    width: 86.25vw;
+    margin-left: 5.93vw;
+    padding-top: 120vw;
+  }
+
+  .action-title {
+    font-size: 8.75vw;
+  }
+
+  .action-description {
+    padding-top: 7.18vw;
+
+    font-size: 5vw;
+  }
+
+  /* Rules for footer mobile */
+
+  .footer::after {
+    background-image: url("../img/game_767.jpg");
+  }
+
+  .download-container {
+    padding-top: 30.93vw;
+  }
+
+  .footer-logo-container {
+    width: 22.5vw;
+    height: 23.12vw;
+
+    border-radius: 4.37vw;
+  }
+
+  .surface-logo-icon {
+    width: 18.75vw;
+  }
+
+  .footer-text-box {
+    padding-top: 18.43vw;
+  }
+
+  .footer-title {
+    font-size: 10vw;
+  }
+
+  .footer-tagline {
+    padding-top: 4.06vw;
+
+    font-size: 4.37vw;
+  }
+
+  .basement-buttons {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23.75vw;
+    padding-bottom: 25.62vw;
+  }
+
+  .basement-logo-box {
+    padding-bottom: 3.12vw;
+  }
+
+  .basement-appstore-group {
+    margin-bottom: 4.37vw;
+  }
+}
+
+
+/* Rules for tablet */
+
+
+/* Rules for header tablet */
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .header::after {
+    background-image: url("../img/football_1280.jpg");
+  }
+
+  .header-logo-box {
+    padding-top: 5.07vw;
+  }
+
+  .surface-logo-text-icon {
+    width: 26.69vw;
+    height: 7.29vw;
+  }
+
+  .tagline-container {
+    padding-top: 23.7vw;
+
+    font-size: 8.33vw;
+    line-height: 1em;
+  }
+
+  .phrase-1 {
+    margin-left: 11.71vw;
+  }
+
+  .phrase-2 {
+    margin-top: 4.16vw;
+    margin-left: 25.78vw;
+  }
+
+  .mobile-stores-container {
+    padding-top: 40.75vw;
+    padding-bottom: 11.84vw;
+  }
+
+  .button-group {
+    width: 40.5vw;
+    height: 10.02vw;
+    justify-content: center;
+
+    border-radius: 4.42vw;
+
+    box-shadow: 0 2.08vw 3.12vw 0 rgba(10, 14, 52, 1);
+  }
+
+  .appstore-group {
+    margin-right: 3.9vw;
+  }
+
+  .appstore-icon {
+    width: 4.68vw;
+    height: 5.46vw;
+    padding-right: 3.51vw;
+  }
+
+  .googleplay-icon {
+    width: 5.33vw;
+    height: 5.85vw;
+    padding-right: 3.64vw;
+  }
+
+  .button-text {
+    font-size: 1.82vw;
+    line-height: 1em;
+  }
+
+  .name-store {
+    padding-top: 0.78vw;
+  }
+
+/* Rules for main tablet Part_1 */
+
+  .participants-group::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 12.23vw;
+    margin-left: -21vw;
+
+    background-image: url("../img/footballer_497.png");
+    background-size: 64.71vw;
+  }
+
+  .participants-group::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 103vw;
+    margin-left: 43.48vw;
+
+    background-image: url("../img/basketballer_436.png");
+    background-size: 56.77vw;
+  }
+
+  .a-title-box {
+    margin-top: 8.5vw;
+    margin-right: 17.7vw;
+    margin-bottom: 3.71vw;
+  }
+
+  .a-text {
+    width: 57.68vw;
+    margin-right: 4.29vw;
+  }
+
+  .a-card-title, .p-card-title, .action-title {
+    font-size: 10.41vw;
+  }
+
+  .connection-box {
+    padding-bottom: 3.5vw;
+  }
+
+  .collaboration-box {
+    height: 30.59vw;
+  }
+
+  .growth-box {
+    height: 23.3vw;
+  }
+
+  .quantity-index, .p-quantity-index {
+    font-size: 2.34vw;
+  }
+
+  .quantity-index::after, .p-quantity-index::after {
+    width: 2.47vw;
+    height: 0.65vw;
+
+    border-radius: 0.26vw;
+  }
+
+  .feature-name {
+    padding-left: 1.69vw;
+
+    font-size: 4.16vw;
+  }
+
+  .feature-text {
+    padding-top: 4.16vw;
+
+    font-size: 2.08vw;
+    line-height: 3.64vw;
+  }
+
+  .p-title-box {
+    margin-top: 6.5vw;
+    margin-left: 4.42vw;
+    margin-bottom: 3vw;
+  }
+
+  .p-text {
+    width: 51vw;
+    margin-left: 4.16vw;
+  }
+
+  .p-connection-box {
+    padding-bottom: 3.2vw;
+  }
+
+  .p-collaboration-box {
+    height: 23.56vw;
+  }
+
+  .p-growth-box {
+    height: 23.56vw;
+  }
+
+  /* Rules for main tablet Part_2 */
+
+  .action-card-item {
+    flex-direction: column;
+
+    padding-top: 87.89vw;
+
+    background-position: top;
+    background-size: contain;
+  }
+
+  .action-index-box {
+    width: 15.10vw;
+    height: 15.10vw;
+    margin-top: 65.62vw;
+    margin-left: 4.29vw;
+  }
+
+  .action-index {
+    font-size: 3.12vw;
+  }
+
+  .action-index::after {
+    width: 3.25vw;
+    height: 0.65vw;
+
+    border-radius: 0.26vw;
+  }
+
+  .action-text-block {
+    width: 86.45vw;
+    padding-bottom: 13.41vw;
+    margin-left: 4.16vw;
+
+  }
+
+  .action-description {
+    padding-top: 1vw;
+
+    font-size: 3.12vw;
+  }
+
+/* Rules for footer tablet */
+
+  .footer::after {
+    background-image: url("../img/game_1280.jpg");
+  }
+
+  .download-container {
+    padding-top: 16.4vw;
+  }
+
+  .footer-logo-container {
+    width: 16.92vw;
+    height: 17.83vw;
+
+    border-radius: 4.81vw;
+  }
+
+  .surface-logo-icon {
+    width: 13.8vw;
+  }
+
+  .footer-text-box {
+    padding-top: 10.67vw;
+  }
+
+  .footer-title {
+    font-size: 10.41vw;
+    letter-spacing: 0.055em;
+  }
+
+  .footer-tagline {
+    padding-top: 3.64vw;
+
+    font-size: 4.68vw;
+  }
+
+  .basement-buttons {
+    padding-top: 37.5vw;
+    padding-bottom: 7.16vw;
+  }
+
+  .basement-logo-box {
+    padding-bottom: 2.99vw;
+  }
+}
+
+
+/* Rules for desktop */
+
+
+/* Rules for header desktop */
+
+@media (min-width: 961px) and (max-width: 1920px) {
+  .header::after {
+    background-image: url("../img/football_1920.jpg");
+  }
+
+  .header-logo-box {
+    padding-top: 2.34vw;
+  }
+
+  .surface-logo-text-icon {
+    width: 9.94vw;
+    height: 2.7vw;
+  }
+
+  .tagline-container {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    padding-top: 14.5vw;
+
+    font-size: 4.69vw;
+    line-height: 1em;
+  }
+
+  .phrase-2 {
+    align-self: flex-end;
+  }
+
+  .mobile-stores-container {
+    padding-top: 11.61vw;
+    padding-bottom: 5.72vw;
+  }
+
+  .button-group {
+    width: 16.19vw;
+    height: 4.01vw;
+    justify-content: center;
+
+    border-radius: 1.87vw;
+
+    box-shadow: 0 0.83vw 1.25vw 0 rgba(10, 14, 52, 1);
+  }
+
+  .appstore-group {
+    margin-right: 2.55vw;
+  }
+
+  .appstore-icon {
+    width: 2.18vw;
+    height: 2.5vw;
+    padding-right: 1.3vw;
+  }
+
+  .googleplay-icon {
+    width: 2.08vw;
+    height: 2.6vw;
+    padding-right: 1.45vw;
+  }
+
+  .button-text {
+    font-size: 0.72vw;
+    line-height: 0.72vw;
+  }
+
+  .name-store {
+    padding-top: 0.31vw;
+  }
+
+/* Rules for main desktop Part_1*/
+
+  .participants-group::before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 1.4vw;
+    margin-left: 19.46vw;
+
+    background-image: url("../img/footballer_566.png");
+    background-size: 29.47vw;
+  }
+
+  .participants-group::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: 47.65vw;
+    margin-right: 6.51vw;
+    margin-left: 42.13vw;
+
+    background-image: url("../img/basketballer_991.png");
+    background-size: 51.61vw;
+  }
+
+  .a-title-box {
+    margin-top: 4.5vw;
+    margin-right: 29.6vw;
+    margin-bottom: 4vw;
+  }
+
+  .a-text {
+    width: 37.13vw;
+    margin-right: 10.36vw;
+  }
+
+  .a-card-title, .p-card-title, .action-title {
+    font-size: 4.16vw;
+  }
+
+  .connection-box {
+    padding-bottom: 3.07vw;
+  }
+
+  .collaboration-box {
+    height: 13.02vw;
+  }
+
+  .growth-box {
+    height: 11.56vw;
+  }
+
+  .quantity-index, .p-quantity-index {
+    font-size: 0.93vw;
+  }
+
+  .quantity-index::after, .p-quantity-index::after {
+    width: 1.09vw;
+    height: 0.26vw;
+
+    border-radius: 0.1vw;
+  }
+
+  .feature-name {
+    padding-left: 0.72vw;
+
+    font-size: 1.87vw;
+  }
+
+  .feature-text {
+    padding-top: 1.56vw;
+
+    font-size: 1.04vw;
+  }
+
+  .p-title-box {
+    margin-top: 4.5vw;
+    margin-left: 10vw;
+    margin-bottom: 4vw;
+  }
+
+  .p-text {
+    width: 38.8vw;
+    margin-left: 10.36vw;
+  }
+
+  .p-connection-box {
+    padding-bottom: 3.07vw;
+  }
+
+  .p-collaboration-box {
+    height: 11.97vw;
+  }
+
+  .p-growth-box {
+    height: 10.2vw;
+  }
+
+  /* Rules for main desktop Part_2*/
+
+  .action-card-item {
+    height: 35.57vw;
+    justify-content: flex-end;
+
+    background-position: top left;
+    background-size: 50%;
+  }
+
+  .action-card-item:nth-child(even) {
+    justify-content: flex-start;
+    background-position: top right;
+  }
+
+  .action-card-item:nth-child(even) .action-description {
+    padding-top: 2vw;
+
+  }
+
+  .active-card {
+    background-image: url("../img/be-active_960.jpg");
+  }
+
+  .contact-card {
+    background-image: url("../img/find-contact_960.jpg");
+  }
+
+  .work-card {
+    background-image: url("../img/work-it_960.jpg");
+  }
+
+  .action-index-box {
+    width: 8.75vw;
+    height: 8.07vw;
+    margin-top: 10.98vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .action-index {
+    font-size: 1.25vw;
+  }
+
+  .action-index::after {
+    width: 1.25vw;
+    height: 0.26vw;
+
+    border-radius: 0.1vw;
+  }
+
+  .action-text-block {
+    box-sizing: border-box;
+    width: 54.68vw;
+    padding-right: 11.25vw;
+    padding-left: 11.25vw;
+    padding-top: 12vw;
+  }
+
+  .action-description {
+    padding-top: 4.5vw;
+
+    font-size: 1.25vw;
+  }
+
+  /* Rules for footer desktop */
+
+  .footer::after {
+    background-image: url("../img/game_1920.jpg");
+  }
+
+  .download-container {
+    flex-direction: row;
+
+    padding-top: 11.92vw;
+  }
+
+  .footer-logo-container {
+    width: 6.77vw;
+    height: 7.13vw;
+
+    border-radius: 1.69vw;
+  }
+
+  .surface-logo-icon {
+    width: 5.52vw;
+  }
+
+  .footer-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.82vw;
+  }
+
+  .footer-title {
+    font-size: 4.16vw;
+  }
+
+  .footer-tagline {
+    font-size: 1.56vw;
+  }
+
+  .basement-buttons {
+    padding-top: 7.86vw;
+    padding-bottom: 13.64vw;
+  }
+
+  .basement-logo-box {
+    padding-bottom: 2.7vw;
+  }
+}
