@@ -122,22 +122,6 @@ body {
   z-index: 0;
 }
 
-.participants-group::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-
-  background-repeat: no-repeat;
-}
-
-.participants-group::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-
-  background-repeat: no-repeat;
-}
-
 .first-participant-card, .second-participant-card {
   position: relative;
   z-index: 0;
@@ -392,18 +376,6 @@ body {
 }
 
 
-/* Screen resolutions for flexible background */
-
-
-@media (min-width: 769px) and (max-width: 960px) {
-  .action-card-item {
-    padding-top: 87.89vw;
-
-    background-size: contain;
-  }
-}
-
-
 /* Rules for mobile */
 
 
@@ -614,6 +586,7 @@ body {
   .action-text-block {
     width: 86.25vw;
     padding-top: 10.62vw;
+
     padding-bottom: 25.31vw;
     padding-left: 5.93vw;
   }
@@ -713,6 +686,10 @@ body {
     margin-top: 40.75vw;
   }
 
+  .mobile-store-link {
+    margin-right: 3.9vw;
+  }
+
   .button-group {
     width: 40.5vw;
     height: 10.02vw;
@@ -721,10 +698,6 @@ body {
     border-radius: 4.42vw;
 
     box-shadow: 0 2.08vw 3.12vw 0 rgba(10, 14, 52, 1);
-  }
-
-  .appstore-group {
-    margin-right: 3.9vw;
   }
 
   .appstore-icon {
@@ -962,6 +935,10 @@ body {
     margin-top: 11.61vw;
   }
 
+  .mobile-store-link {
+    margin-right: 2.55vw;
+  }
+
   .button-group {
     width: 16.19vw;
     height: 4.01vw;
@@ -970,10 +947,6 @@ body {
     border-radius: 1.87vw;
 
     box-shadow: 0 0.83vw 1.25vw 0 rgba(10, 14, 52, 1);
-  }
-
-  .appstore-group {
-    margin-right: 2.55vw;
   }
 
   .appstore-icon {
@@ -1124,8 +1097,8 @@ body {
 
   .action-text-block {
     width: 33.6vw;
-    padding-left: 6.56vw;
     padding-top: 12vw;
+    padding-left: 6.56vw;
   }
 
   .action-description {
@@ -1199,6 +1172,10 @@ body {
     margin-top: 223px;
   }
 
+  .mobile-store-link {
+    margin-right: 50px;
+  }
+
   .button-group {
     width: 311px;
     height: 77px;
@@ -1207,10 +1184,6 @@ body {
     border-radius: 36px;
 
     box-shadow: 0 16px 24px 0 rgba(10, 14, 52, 1);
-  }
-
-  .appstore-group {
-    margin-right: 50px;
   }
 
   .appstore-icon {
