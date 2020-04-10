@@ -282,14 +282,14 @@ body {
   flex-direction: column;
 }
 
+.action-card-image-block {
+  position: relative;
+  z-index: 0;
+}
+
 .action-index-box {
   position: absolute;
   z-index: 1;
-
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 
   display: flex;
   justify-content: center;
@@ -557,18 +557,15 @@ body {
 
   /* Rules for main mobile Part_2 */
 
-  .action-card-image-block {
-    height: 109.68vw;
-  }
-
   .action-card-pic {
-    height: inherit;
+    width: 100%;
   }
 
   .action-index-box {
+    bottom: -3vw;
+
     width: 21.87vw;
     height: 21.87vw;
-    margin-top: 91.56vw;
     margin-left: 6.25vw;
   }
 
@@ -584,9 +581,10 @@ body {
   }
 
   .action-text-block {
-    width: 86.25vw;
+    box-sizing: border-box;
+    width: 100%;
     padding-top: 10.62vw;
-
+    padding-right: 7.81vw;
     padding-bottom: 25.31vw;
     padding-left: 5.93vw;
   }
@@ -602,6 +600,7 @@ body {
   }
 
   /* Rules for footer mobile */
+
   .footer {
     padding-top: 30.93vw;
     padding-bottom: 3.12vw;
@@ -824,18 +823,15 @@ body {
 
   /* Rules for main tablet Part_2 */
 
-  .action-card-image-block {
-    height: 76.04vw;
-  }
-
   .action-card-pic {
-    height: inherit;
+    width: 100%;
   }
 
   .action-index-box {
+    bottom: -4vw;
+
     width: 15.10vw;
     height: 15.10vw;
-    margin-top: 65.62vw;
     margin-left: 4.29vw;
   }
 
@@ -851,10 +847,12 @@ body {
   }
 
   .action-text-block {
-    width: 86.45vw;
+    box-sizing: border-box;
+    width: 100%;
     padding-top: 9.5vw;
-    padding-left: 4.16vw;
+    padding-right: 9.37vw;
     padding-bottom: 13.41vw;
+    padding-left: 4.16vw;
   }
 
   .action-description {
@@ -1077,11 +1075,15 @@ body {
   }
 
   .action-index-box {
+    top: 10.98vw;
+    right: -4.37vw;
+
     width: 8.75vw;
     height: 8.07vw;
-    margin-top: 10.98vw;
-    margin-right: auto;
-    margin-left: auto;
+  }
+
+  .action-card-item:nth-child(even) .action-index-box {
+    left: -4.37vw;
   }
 
   .action-index {
@@ -1096,8 +1098,10 @@ body {
   }
 
   .action-text-block {
-    width: 33.6vw;
+    box-sizing: border-box;
+    width: 50%;
     padding-top: 12vw;
+    padding-right: 10.05vw;
     padding-left: 6.56vw;
   }
 
@@ -1328,11 +1332,15 @@ body {
   }
 
   .action-index-box {
+    top: 211px;
+    right: -84px;
+
     width: 168px;
     height: 155px;
-    margin-top: 211px;
-    margin-right: auto;
-    margin-left: auto;
+  }
+
+  .action-card-item:nth-child(even) .action-index-box {
+    left: -84px;
   }
 
   .action-index {
